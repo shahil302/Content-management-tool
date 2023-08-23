@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+</head>
+
+<body>
+    <section>
+        <h1>Create your blog</h1>
+        <div class="card">
+            <div class="text-section">
+                <input class="div-section" id="title" type="text" placeholder="Enter your title">
+            </div>
+            <div class="input-section">
+                <label class="label-section" for="image">Upload image:</label>
+                <input id="image" type="file" accept="image/*">
+            </div>
+            <div class="input-section">
+                <label class="label-section" for="video">Upload Video:</label>
+                <input id="video" type="file" accept="video/*">
+            </div>
+            <div class="text-section">
+                <textarea class="div-section" id="content" rows="15" placeholder="Enter your content"></textarea>
+            </div>
+        </div>
+        <div class="button-section">
+            <button onclick="submitForm()">Submit</button>
+        </div>
+
+        <div class="data-container">
+            <div class="data-section" id="dataSection">
+
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
